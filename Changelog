@@ -6,3 +6,9 @@
         - Creation de la structure du header
     Observations:
         - Il faut regarder les différentes libreries d'icones et choisir la plus adaptée au design.
+12/07/2023 - Header
+    Modifications:
+        - Finalisation de la structure HTML
+        - Fichier normalize.css ajouté pour standardisation des styles
+        - Installation de librerie d'icones Font Awesome
+        - Application des styles au header
