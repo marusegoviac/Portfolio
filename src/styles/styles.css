@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*GENERAL CLASSES*/
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #1C1C1D
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    line-height: 2em;
+}
+
+/*TEXT CLASSES*/
+
+.text-thin {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 100;
+ }
+
+.text-light {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 300;
+}
+.text-regular {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+}
+.text-medium {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 500;
+}
+.text-bold {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 700;
+}
+.text-black {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 900;
+}
+
+.text-extrasmall {
+    font-size: smaller;
+}
+
+.text-small {
+    font-size: small;
+}
+
+.text-medium {
+    font-size: medium;
+}
+
+.text-large {
+    font-size: large;
+}
+
+.text-black {
+    color: #1C1C1D;
+}
+
+.text-primary {
+    color: #574B88;
+}
+
+.text-accent {
+    color: #E81649;
+}
+
+/*BUTTONS*/
+
+.btn-primary {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background-color: #574B88;
+    color: white;
+    border: 2px solid #574B88;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #E6E7F9;
+    color: #574B88;
+    cursor: pointer;
+}
+
+.btn-scroll {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    padding: .9rem 1rem;
+    background-color: #E6E7F9;
+    border: 2px solid #c8baf9;
+    border-radius: 30px;
+    color: #c8baf9;
+}
+
+.btn-scroll:hover {
+    border: 2px solid #574B88;
+    color: #574B88;
+}
+
+/*HEADER*/
+
+.nav {
+    margin: 3rem auto;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-inline: 3rem;
+    padding: 1rem;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid #E81649;
+}
+
+a {
+    text-decoration: none;
+    color: #161616;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    margin-left: 10%;
+}
+
+.hero-info {
+    margin: 5rem 0;
+}
+
+.greeting {
+    line-height: 0;
+}
+
+.my-name {
+    font-size: 6rem;
+    margin: 0;
+    color: #E81649;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+.description {
+    width: 80%;
+}
+
+/*.hero-links {
+    align-items: center;
+}
+
+.hero-link {
+    rotate: 90deg;
+}*/
+
+.hero-links {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10rem;
+    margin: 10em auto;
+    position: relative;
+}
+
+.hero-link {
+    rotate: 90deg;
+    color:#574B88;
+}
+
+.hero-link:hover{
+    color:#8470d3;
+}
