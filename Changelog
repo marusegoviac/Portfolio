@@ -12,3 +12,6 @@
         - Fichier normalize.css ajouté pour standardisation des styles
         - Installation de librerie d'icones Font Awesome
         - Application des styles au header
+12/12/2023 - Sections internes
+    Modifications:
+        - Création des classes pour les sections internes du site.
