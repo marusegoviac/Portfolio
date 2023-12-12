@@ -4,12 +4,22 @@
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #F2F3FB;
     color: #1C1C1D
 }
 
 .container {
     width: 80%;
     margin: auto;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 p {
@@ -19,28 +29,22 @@ p {
 /*TEXT CLASSES*/
 
 .text-thin {
-    font-family: 'Roboto', arial, sans-serif;
     font-weight: 100;
  }
 
 .text-light {
-    font-family: 'Roboto', arial, sans-serif;
     font-weight: 300;
 }
 .text-regular {
-    font-family: 'Roboto', arial, sans-serif;
     font-weight: 400;
 }
 .text-medium {
-    font-family: 'Roboto', arial, sans-serif;
     font-weight: 500;
 }
 .text-bold {
-    font-family: 'Roboto', arial, sans-serif;
     font-weight: 700;
 }
 .text-black {
-    font-family: 'Roboto', arial, sans-serif;
     font-weight: 900;
 }
 
@@ -185,4 +189,86 @@ a {
 
 .hero-link:hover{
     color:#8470d3;
+}
+
+/*BODY CONTENT*/
+
+.sur-moi, .competences, .mes-projets {
+    padding: 5rem 10% 5rem;
+}
+
+/*SUR MOI*/
+
+.sur-moi, .mes-projets {
+    background-color: #E6E7F9;
+}
+
+.sur-moi-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5rem 0 0 0;
+}
+
+.sur-moi-video {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 1.5rem 0;
+    background-color: #D9D9D9;
+    border-radius: 35px;
+    box-shadow: 0px 3px 5px #a6a5a5;
+}
+
+.sur-moi-info {
+    margin: 0 0 0 5rem;
+}
+
+.sur-moi-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0 0 0;
+    font-size: 1.5rem;
+    color:#E81649;
+}
+
+/*CE QUE JE FAIS*/
+
+.competences-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 0 0;
+}
+
+.competences-card {
+    width: 350px;
+    height: 180;
+    padding: 3rem 0;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 0 3px 5px #a6a5a5;
+    text-align: center;
+}
+
+.competences-card-icon {
+    font-size: 4rem;
+    color: #574B88;
+}
+
+.competences-card h3 {
+    margin-bottom: 0;
+}
+
+/*MES PROJETS*/
+
+
+
+.mes-projets-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2rem 0 0 0
+}
+
+.mes-projets-sticky {
+    width: 100%;
+    height: 100%;
+    position: sticky;
 }
