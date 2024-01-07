@@ -14,6 +14,15 @@
   false
 );*/
 
+function myFunction() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+
 let mybutton = document.getElementById("scroll-arrow");
 
 window.onscroll = function() {scrollFunction()};

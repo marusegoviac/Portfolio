@@ -10,10 +10,30 @@
     <link type="text/css" rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <!--MOBILE NAV-->
+    <div class="mobile-nav">
+      <a href="#" class="active">
+        <img src="assets/img/logo.png" class="logo" />
+      </a>
+
+      <ul class="mobile-menu" id="mobile-menu">
+        <li><a href="#sur-moi" class="scroll-link">Sur moi</a></li>
+        <li>
+          <a href="#competences" class="scroll-link">Ce que je fais</a>
+        </li>
+        <li><a href="#mes-projets" class="scroll-link">Mes projets</a></li>
+        <li><a href="#contact" class="scroll-link">Me contacter</a></li>
+      </ul>
+
+      <a href="javascript:void(0);" class="mobile-icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
     <div>
       <!--HEADER-->
       <header class="" id="header" id="header">
-        <!--NAV-->
+        <!--DESKTOP NAV-->
         <nav class="nav">
           <ul class="menu">
             <li><a href="#sur-moi" class="scroll-link">Sur moi</a></li>
@@ -42,10 +62,10 @@
               <button class="btn-primary">Telechargez mon CV</button>
             </a>
           </div>
-          <div>
+          <div class="avatar-space">
             <img src="assets/img/avatar.png" class="avatar" />
           </div>
-          <div>
+          <div class="hero-links-space">
             <div class="hero-links">
               <a
                 class="hero-link"
@@ -78,7 +98,7 @@
 
       <!--SUR MOI-->
       <section class="sur-moi" id="sur-moi">
-        <h2 class="text-bold">Sur moi</h2>
+        <h2 class="text-bold section-title">Sur moi</h2>
         <!-- <video width="320" height="240">
               <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUYbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXAg" type="video/mp4">
           </video> -->
@@ -106,7 +126,7 @@
 
       <!--CE QUE JE FAIS-->
       <section class="competences" id="competences">
-        <h2 class="text-bold">Ce que je fais</h2>
+        <h2 class="text-bold section-title">Ce que je fais</h2>
         <div class="competences-content">
           <div class="competences-card">
             <i class="fa-solid fa-pen-ruler competences-card-icon"></i>
@@ -126,7 +146,7 @@
       <!--MES PROJETS-->
       <section class="mes-projets" id="mes-projets">
         <div class="mes-projets-sticky">
-          <h2 class="text-bold">Mes projets</h2>
+          <h2 class="text-bold section-title">Mes projets</h2>
         </div>
 
         <!--OPENHOUM-->
@@ -289,7 +309,7 @@
 
       <!--CONTACTEZ MOI-->
       <section class="contactez-moi" id="contact">
-        <h2 class="text-bold contact-title">Contactez moi</h2>
+        <h2 class="text-bold contact-title section-title">Contactez moi</h2>
         <div class="contactez-moi-content">
           <div>
             <p class="text-light contact-description">
