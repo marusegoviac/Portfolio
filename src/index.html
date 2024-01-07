@@ -12,14 +12,16 @@
   <body>
     <div>
       <!--HEADER-->
-      <header class="" id="header">
+      <header class="" id="header" id="header">
         <!--NAV-->
         <nav class="nav">
           <ul class="menu">
-            <li><a href="http://">Sur moi</a></li>
-            <li><a href="http://">Ce que je fais</a></li>
-            <li><a href="http://">Mes projets</a></li>
-            <li><a href="http://">Me contacter</a></li>
+            <li><a href="#sur-moi" class="scroll-link">Sur moi</a></li>
+            <li>
+              <a href="#competences" class="scroll-link">Ce que je fais</a>
+            </li>
+            <li><a href="#mes-projets" class="scroll-link">Mes projets</a></li>
+            <li><a href="#contact" class="scroll-link">Me contacter</a></li>
           </ul>
         </nav>
 
@@ -29,21 +31,40 @@
             <h2 class="my-name">Maria</h2>
             <h1 class="title">Développeuse FrontEnd</h1>
             <p class="text-large text-light description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              id turpis eget nibh vulputate consectetur. Sed nec vehicula diam,
-              gravida tempor urna. Mauris ultricies blandit luctus.
+              Je suis une conceptrice et dévéloppeuse des sites et des
+              applications web. J'aime prendre des challenges, faire preuve de
+              mon esprit créatif et analytique, et le travail en équipe.
             </p>
-            <button class="btn-primary">Telechargez mon CV</button>
+            <a
+              href="assets/files/CV-SEGOVIA-Maria.pdf"
+              download="CV-SEGOVIA-Maria.pdf"
+            >
+              <button class="btn-primary">Telechargez mon CV</button>
+            </a>
           </div>
           <div>
-            <img src="assets/img/header.png" />
+            <img src="assets/img/avatar.png" class="avatar" />
           </div>
           <div>
             <div class="hero-links">
-              <a class="hero-link" href="http://">LinkedIn</a>
-              <a class="hero-link" href="http://">GitHub</a>
-              <button class="btn-scroll">
-                <i class="fa-solid fa-chevron-down"></i>
+              <a
+                class="hero-link"
+                href="https://www.linkedin.com/in/mariaesegovia/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a
+                class="hero-link"
+                href="https://github.com/marusegoviac"
+                target="_blank"
+                >GitHub</a
+              >
+              <button
+                class="btn-scroll"
+                id="scroll-arrow"
+                onclick="topFunction()"
+              >
+                <i class="fa-solid fa-chevron-up"></i>
               </button>
             </div>
             <!--<ul class="hero-links">
@@ -56,42 +77,35 @@
       </header>
 
       <!--SUR MOI-->
-      <section class="sur-moi">
+      <section class="sur-moi" id="sur-moi">
         <h2 class="text-bold">Sur moi</h2>
         <!-- <video width="320" height="240">
-                        <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUYbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXAg" type="video/mp4">
-                    </video> -->
+              <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUYbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXAg" type="video/mp4">
+          </video> -->
         <div class="sur-moi-content">
-          <div class="sur-moi-video">
-            <div></div>
+          <div>
+            <img src="assets/img/hobbies.png" class="hobbies-img" />
           </div>
           <div class="sur-moi-info">
             <div class="text-light">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas id turpis eget nibh vulputate consectetur. Sed nec
-                vehicula diam, gravida tempor urna. Mauris ultricies blandit
-                luctus.
+                J'ai un diplôme en ingénierie informatique et quatre ans
+                d'expérience en tant que Développeuse Freelance. J'aime
+                l'organisation et la planification, j'ai un esprit critique et
+                beaucoup de créativité. J'aime apprendre, et encore plus quand
+                j'apprends des autres.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas id turpis eget nibh vulputate consectetur. Sed nec
-                vehicula diam, gravida tempor urna.
+                Mes passe-temps sont : jouer au violon (et essayer d'apprendre
+                d'autres instruments), lire, écrire et prendre des photos.
               </p>
-            </div>
-            <div class="sur-moi-icons">
-              <i class="fa-solid fa-face-smile"></i>
-              <i class="fa-solid fa-music"></i>
-              <i class="fa-solid fa-book-open"></i>
-              <i class="fa-solid fa-camera"></i>
-              <i class="fa-solid fa-music"></i>
             </div>
           </div>
         </div>
       </section>
 
       <!--CE QUE JE FAIS-->
-      <section class="competences">
+      <section class="competences" id="competences">
         <h2 class="text-bold">Ce que je fais</h2>
         <div class="competences-content">
           <div class="competences-card">
@@ -110,91 +124,228 @@
       </section>
 
       <!--MES PROJETS-->
-      <section class="mes-projets">
+      <section class="mes-projets" id="mes-projets">
         <div class="mes-projets-sticky">
-            <h2 class="text-bold">Mes projets</h2>
+          <h2 class="text-bold">Mes projets</h2>
         </div>
-        
+
+        <!--OPENHOUM-->
         <div class="mes-projets-content">
           <div>
             <h3 class="text-regular">OpenHoum</h3>
             <div class="text-light">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                id turpis eget nibh vulputate consectetur. Sed nec vehicula diam,
-                gravida tempor urna. Mauris ultricies blandit luctus.
-                </p>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                id turpis eget nibh vulputate consectetur. Sed nec vehicula diam,
-                gravida tempor urna. Mauris ultricies blandit luctus.
-                </p>
+              <p>
+                OpenHoum est une application web dédiée à l'achat, la vente et
+                la location de biens immobiliers au Venezuela. Il dispose
+                principalement d'un marché en ligne, où vous pouvez trouver des
+                propriétés en fonction de leur emplacement et de leurs
+                caractéristiques.
+              </p>
+              <p>
+                Pour répondre aux objectifs de la plateforme, une interface
+                simple a été créée pour privilégier le grand nombre de
+                fonctionnalités dont elle dispose, comme son moteur principal de
+                recherche, connecté à l'API Google Maps, et le grand nombre de
+                filtres qui peuvent être sélectionnés pour trouver la propriété
+                idéal.
+              </p>
             </div>
-            <div>UI Design</div>
-            <div>Développement FrontEnd</div>
-            <div>Gestion de Projet</div>
-            <div>
-              <i class="fa-solid fa-face-smile"></i>
-              <i class="fa-solid fa-music"></i>
-              <i class="fa-solid fa-book-open"></i>
-              <i class="fa-solid fa-camera"></i>
-              <i class="fa-solid fa-face-smile"></i>
-              <i class="fa-solid fa-music"></i>
+            <div class="mes-projets-tools">
+              <div class="mes-projets-competence">Développement FrontEnd</div>
+              <div class="mes-projets-competence">UI Design</div>
+              <div class="mes-projets-competence">Gestion de Projet</div>
             </div>
-            <button>Voir Live</button>
+
+            <div class="techs">
+              <p class="text-large">Outils:</p>
+              <p class="text-large text-light">
+                Html, Css, JavaScript, VueJS, Quasar, NodeJS, MySQL, Figma,
+                SCRUM, Git.
+              </p>
+            </div>
+            <!--
+            <button class="btn-secondary">Voir Live</button>
+            -->
           </div>
           <div>
-            <img src="assets/img/header.png" alt="" />
+            <img src="assets/img/openhoum.png" class="project-card" />
+          </div>
+        </div>
+
+        <!--LOOSE UNICORNS-->
+        <div class="mes-projets-content">
+          <div>
+            <h3 class="text-regular">Loose Unicorns</h3>
+            <div class="text-light">
+              <p>
+                Loose Unicorns est un fournisseur de grains de café au
+                Moyen-Orient. Il comporte différentes pages qui montrent la
+                personnalité de la marque et un marché en ligne où vous pouvez
+                vous procurer différents types de produits à base de café.
+              </p>
+              <p>
+                Ce site Web a été créé sous WordPress de manière personnalisée,
+                c'est-à-dire sans l'aide d'aucun template, uniquement en
+                utilisant les outils de développement WordPress.
+              </p>
+            </div>
+            <div class="mes-projets-tools">
+              <div class="mes-projets-competence">Développement FrontEnd</div>
+              <div class="mes-projets-competence">Gestion de Projet</div>
+            </div>
+
+            <div class="techs">
+              <p class="text-large">Outils:</p>
+              <p class="text-large text-light">
+                Html, Css, JavaScript, PHP, WordPress, SCRUM, Git.
+              </p>
+            </div>
+            <!--
+            <button class="btn-secondary">Voir Live</button>
+            -->
+          </div>
+          <div>
+            <img src="assets/img/loose-unicorns.png" class="project-card" />
+          </div>
+        </div>
+
+        <!--RECURSIVE-->
+        <div class="mes-projets-content">
+          <div>
+            <h3 class="text-regular">Recursive</h3>
+            <div class="text-light">
+              <p>
+                Il s'agit d'un site Web dédié à la présentation de Recursive,
+                une équipe de développeurs et de concepteurs qui mettent à
+                disposition leurs compétences et connaissances pour créer des
+                sites Web et des applications.
+              </p>
+              <p>
+                Avec un style simple mais inhabituel, ce design met l'accent sur
+                le sentiment d'innovation, de jeunesse, de risque et en même
+                temps de sérieux que la marque veut transmettre, en utilisant
+                les couleurs qui les caractérisent et des éléments qui
+                favorisent l'interactivité avec l'utilisateur.
+              </p>
+            </div>
+            <div class="mes-projets-tools">
+              <div class="mes-projets-competence">UI Design</div>
+            </div>
+
+            <div class="techs">
+              <p class="text-large">Outils:</p>
+              <p class="text-large text-light">Figma.</p>
+            </div>
+            <!--
+            <button class="btn-secondary">Voir Live</button>
+            -->
+          </div>
+          <div>
+            <img src="assets/img/recursive.png" class="project-card" />
+          </div>
+        </div>
+
+        <!--VIMB-->
+        <div class="mes-projets-content">
+          <div>
+            <h3 class="text-regular">VIMB</h3>
+            <div class="text-light">
+              <p>
+                VIMB est un site Internet dédié à la présentation des activités
+                et services du Bureau des investissements et de l'immigration de
+                Vanuatu. Il comporte différentes sections et pages dédiées à la
+                présentation des événements et des actualités de l'organisation,
+                ainsi que des exigences et des procédures à suivre pour obtenir
+                la citoyenneté.
+              </p>
+              <p>
+                Créé sur WordPress avec la fonctionnalité Multisite, qui permet
+                de configurer différentes sites web selon la région et la langue
+                dans le même endroit, ainsi que montrer à l'utilisateur le site
+                correct en fonction de l'emplacement à partir duquel il accéde
+                au site.
+              </p>
+            </div>
+            <div class="mes-projets-tools">
+              <div class="mes-projets-competence">Développement FrontEnd</div>
+              <div class="mes-projets-competence">Gestion de Projet</div>
+            </div>
+
+            <div class="techs">
+              <p class="text-large">Outils:</p>
+              <p class="text-large text-light">
+                HTML, CSS, JavaScript, WordPress, SCRUM.
+              </p>
+            </div>
+            <!--
+            <button class="btn-secondary">Voir Live</button>
+            -->
+          </div>
+          <div>
+            <img src="assets/img/vimb.png" class="project-card" />
           </div>
         </div>
       </section>
 
       <!--CONTACTEZ MOI-->
-      <section class="container">
-        <h2 class="text-bold">Contactez moi</h2>
-        <div>
+      <section class="contactez-moi" id="contact">
+        <h2 class="text-bold contact-title">Contactez moi</h2>
+        <div class="contactez-moi-content">
           <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              id turpis eget nibh vulputate consectetur.
+            <p class="text-light contact-description">
+              Si vous souhaitez me connaître davantage et obtenir des détails
+              sur ce que je fais, envoyez-moi un email ou appelez-moi.
             </p>
-            <div>
-              <i class="fa-solid fa-envelope"></i>
-              <p>mrsegovia6@gmail.com</p>
+            <div class="text-large contact-info">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <p class="contact-text">mrsegovia6@gmail.com</p>
             </div>
-            <div>
-              <i class="fa-solid fa-phone"></i>
-              <p>07 83 22 09 73</p>
+            <div class="text-large contact-info">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <p class="contact-text">07 83 22 09 73</p>
             </div>
-            <button>Envoyez-moi un e-mail</button>
+            <a href="mailto:mrsegovia6@gmail.com">
+              <button class="btn-primary">Envoyez-moi un e-mail</button>
+            </a>
           </div>
 
-          <div>
-            <h5>Trouvez-moi sur</h5>
-            >
-            <div>
-              <i class="fa-solid fa-envelope"></i>
-              <p>LinkedIn</p>
+          <div class="trouvez-moi">
+            <h5 class="text-large text-regular social-title">
+              Trouvez-moi sur
+            </h5>
+            <div class="social-container">
+              <div class="social-media">
+                <a
+                  href="https://www.linkedin.com/in/mariaesegovia/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in social-icon"></i>
+                </a>
+                <p class="text-small">LinkedIn</p>
+              </div>
+              <div class="social-media">
+                <a href="https://github.com/marusegoviac" target="_blank">
+                  <i class="fa-brands fa-github social-icon"></i>
+                </a>
+                <p class="text-small">GitHub</p>
+              </div>
             </div>
-            <div>
-              <i class="fa-solid fa-phone"></i>
-              <p>GitHub</p>
-            </div>
-            <button>Telechargez mon CV</button>
           </div>
         </div>
       </section>
 
       <!--FOOTER-->
-      <footer>
-        <div>
-          <a>Sur moi</a>
-          <a>Ce que je fais</a>
-          <a>Mes projets</a>
-          <a>Me contacter</a>
+      <footer class="footer">
+        <div class="footer-links-container">
+          <a href="#sur-moi" class="scroll-link footer-link">Sur moi</a>
+          <a href="#competences" class="scroll-link footer-link"
+            >Ce que je fais</a
+          >
+          <a href="#mes-projets" class="scroll-link footer-link">Mes projets</a>
+          <a href="#contact" class="scroll-link footer-link">Me contacter</a>
         </div>
         <div>
-          <p>Maria Segovia - Développeuse FrontEnd. 2023</p>
+          <p class="text-thin">Maria Segovia - Développeuse FrontEnd. 2024</p>
         </div>
       </footer>
 
@@ -202,6 +353,7 @@
         src="https://kit.fontawesome.com/9aac087614.js"
         crossorigin="anonymous"
       ></script>
+      <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
       <script src="index.js" async defer></script>
     </div>
   </body>
